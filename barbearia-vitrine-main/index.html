@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbearia</title>
+    <meta name="theme-color" content="#11100e" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content="Cortes, barba e cuidado pessoal na Barbearia Rodrigo dos Anjos. Escolha seu profissional e peça seu horário pelo site ou WhatsApp." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Estilos do modal de Serviço (iguais ao print) -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <img src="./assets/logo-ra-baberaria1.png" alt="" class="logo-img">
+                <span>RA <small>BARBEARIA</small></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#contact">Agendamento</a></li>
+            </ul>
+            <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <i class='bx bx-menu' aria-hidden="true"></i>
+            </button>
+        </nav>
+    </header>
+
+    <aside id="paymentReturnNotice" class="payment-return-notice" role="status" aria-live="polite" hidden>
+        <i class='bx bx-time-five' aria-hidden="true"></i>
+        <span id="paymentReturnText"></span>
+    </aside>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-image" aria-hidden="true">
+            <img src="./assets/barbeiro1.png" alt="">
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow"><span></span> BARBEARIA • TORRE, RECIFE</p>
+            <h1>Seu estilo.<br><span>Sua assinatura.</span></h1>
+            <p class="hero-description">Cuidado de verdade, técnica e personalidade em cada corte.</p>
+            <a class="hero-cta" href="#contact">Escolha seu profissional <i class='bx bx-right-arrow-alt' aria-hidden="true"></i></a>
+            <a class="hero-scroll" href="#services">CONHEÇA A BARBEARIA <i class='bx bx-down-arrow-alt' aria-hidden="true"></i></a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="services-content container">
+            <span class="eyebrow">CUIDADO EM CADA DETALHE</span>
+            <h2>Serviços</h2>
+            <p>Na Barbearia, oferecemos serviços completos para cuidar do seu estilo com qualidade e
+                profissionalismo:</p>
+        </div>
+
+        <section class="haircuts">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="150">
+                <img src="./assets/corte1.png" alt="Corte degradê" class="service-img">
+                <div class="haircut-info">
+                    <strong>Acabamento</strong>
+                    <span class="service-price">R$ 20,00</span>
+                </div>
+            </div>
+
+            <div class="haircut" data-aos="fade-up" data-aos-delay="250">
+                <img src="./assets/corte2.png" alt="Corte de Barba" class="service-img">
+                <div class="haircut-info">
+                    <strong>Barba</strong>
+                    <span class="service-price">R$ 40,00</span>
+                </div>
+            </div>
+
+
+
+            <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+                <img src="./assets/corte4.png" alt="Sobrancelha" class="service-img">
+                <div class="haircut-info">
+                    <strong>Corte + Botox Prime</strong>
+                    <span class="service-price">R$ 105,00</span>
+                </div>
+            </div>
+
+            <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+                <img src="./assets/corte5.png" alt="Sobrancelha" class="service-img">
+                <div class="haircut-info">
+                    <strong>Sobrancelha</strong>
+                    <span class="service-price">R$ 25,00</span>
+                </div>
+            </div>
+
+            <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+                <img src="./assets/corte6.png" alt="Luzes" class="service-img">
+                <div class="haircut-info">
+                    <strong>Luzes</strong>
+                    <span class="service-price">R$ 100,00</span>
+                </div>
+            </div>
+
+            <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+                <img src="./assets/corte-infantil.png" alt="Corte infantil" class="service-img">
+                <div class="haircut-info">
+                    <strong>Corte infantil</strong>
+                    <span class="service-price">R$ 50,00</span>
+                </div>
+            </div>
+
+            <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+                <img src="./assets/corte-tesoura.png" alt="Corte Tesoura" class="service-img">
+                <div class="haircut-info">
+                    <strong>Tesoura</strong>
+                    <span class="service-price">R$ 50,00</span>
+                </div>
+            </div>
+
+            <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+                <img src="./assets/corte3.png" alt="Maquina e Tesoura" class="service-img">
+                <div class="haircut-info">
+                    <strong>Maquina e Tesoura</strong>
+                    <span class="service-price">R$ 40,00</span>
+                </div>
+            </div>
+
+            <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+                <img src="./assets/corte-maquina.png" alt="Corte Maquina" class="service-img">
+                <div class="haircut-info">
+                    <strong>Maquina</strong>
+                    <span class="service-price">R$ 40,00</span>
+                </div>
+            </div>
+
+            <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+                <img src="./assets/logo-autismo1.jpeg" alt="Atendimento para corte sensorial" class="service-img">
+                <div class="haircut-info">
+                    <strong>Corte Sensorial</strong>
+
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <span class="eyebrow">QUEM CONHECE, RECOMENDA</span>
+            <h2 class="section-title">Experiências de quem já sentou na cadeira</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Simplesmente incrível! A equipe é super atenciosa e o resultado do meu
+                        cabelo ficou perfeito. Recomendo de olhos fechados!"</p>
+                    <p class="testimonial-author">- Alex</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Ambiente acolhedor e profissionais extremamente capacitados. Sempre
+                        saio de lá me sentindo renovada e linda!"</p>
+                    <p class="testimonial-author">- Henrique</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"O melhor salão da região! Preços justos e qualidade excepcional. Sou
+                        cliente fiel há mais de 3 anos."</p>
+                    <p class="testimonial-author">- Maciel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="contact">
+        <span class="eyebrow">SEU PRÓXIMO CORTE COMEÇA AQUI</span>
+        <h2 class="section-title">Agende Seu Horário Agora</h2>
+        <p class="cta-subtitle">Escolha seu profissional e solicite o melhor horário para você.</p>
+
+        <div class="professionals-grid">
+            <article class="professional-card">
+                <div class="professional-photo">
+                    <img src="./assets/barbeiro1.png" alt="Rodrigo realizando um corte na barbearia">
+                    <span class="professional-number">01</span>
+                </div>
+                <div class="professional-info">
+                    <div class="professional-heading">
+                        <div>
+                            <span class="professional-label">SEU BARBEIRO</span>
+                            <h3>Rodrigo</h3>
+                        </div>
+                        <i class='bx bx-cut professional-icon' aria-hidden="true"></i>
+                    </div>
+                    <p>Atendimento cuidadoso e um corte feito para combinar com você.</p>
+                    <button class="button-contact openModalBtn" data-pro="Rodrigo" data-wa="5581996221060"
+                        data-col="reservas_rodrigo">
+                        <span>Agendar com Rodrigo</span>
+                        <i class='bx bx-right-arrow-alt' aria-hidden="true"></i>
+                    </button>
+                </div>
+            </article>
+
+            <article class="professional-card">
+                <div class="professional-photo">
+                    <img src="./assets/barbeiro2.png" alt="Melqui, barbeiro da equipe">
+                    <span class="professional-number">02</span>
+                </div>
+                <div class="professional-info">
+                    <div class="professional-heading">
+                        <div>
+                            <span class="professional-label">SEU BARBEIRO</span>
+                            <h3>Melqui</h3>
+                        </div>
+                        <i class='bx bx-cut professional-icon' aria-hidden="true"></i>
+                    </div>
+                    <p>Precisão, estilo e atenção aos detalhes em cada atendimento.</p>
+                    <button class="button-contact openModalBtn" data-pro="Melqui" data-wa="5581996221060"
+                        data-col="reservas_melqui">
+                        <span>Agendar com Melqui</span>
+                        <i class='bx bx-right-arrow-alt' aria-hidden="true"></i>
+                    </button>
+                </div>
+            </article>
+        </div>
+
+        <div class="container">
+            <div class="cta-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class='bx bx-time'></i>
+                        <span>Seg-Sáb: 9h às 19h</span>
+                    </div>
+                    <div class="info-item">
+                        <i class='bx bx-phone'></i>
+                        <span>(81) 0000-0000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <div class="iframe">
+        <h2 class="iframe-title">Venha nos conhecer</h2>
+    </div>
+
+    <iframe width="100%"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.9077725013387!2d-34.91453931495708!3d-8.047871767240625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19cbbdbcce57%3A0xeb0bc16590903ff3!2sBarbearia%20Rodrigo%20Dos%20Anjos!5e0!3m2!1spt-BR!2sbr!4v1756865453973!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="https://wa.me/5581996221060" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+        <p>&copy; 2025 Barbearia. Todos os direitos reservados.</p>
+        <p>📍 Rua Professor Barreto Campello, 1245A - Torre | ☎️ (81) 0000-0000</p>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5581996221060" class="whatsapp-float" target="_blank">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <!-- ===== MODAIS ===== -->
+
+    <!-- 1) Modal de Agendamento -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <span class="close" onclick="fecharModal('modal')">&times;</span>
+            <h2>Escolha seu horário</h2>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" required />
+
+            <label for="hora">Hora:</label>
+            <select id="hora">
+                <option value="">Selecione um horário</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+                <option>18:00</option>
+
+            </select>
+
+            <!-- Abre o modal de serviços -->
+            <label for="servicoDisplay">Serviço:</label>
+            <input id="servicoDisplay" type="text" placeholder="Selecionar..." readonly />
+
+            <p class="deposit-note"><i class='bx bx-lock-alt' aria-hidden="true"></i> Sinal de <strong>R$ 15,00</strong> via Mercado Pago para reservar. O valor será descontado do serviço.</p>
+            <button id="confirmarBtn">Pagar sinal de R$ 15,00</button>
+            <div id="bookingStatus" class="booking-status" role="status" aria-live="polite" hidden>
+                <span id="bookingStatusText"></span>
+                <a id="bookingFallbackLink" target="_blank" rel="noopener" hidden>Enviar pedido pelo WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2) Modal do Nome -->
+    <div id="modalCliente" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <span class="close" onclick="fecharModal('modalCliente')">&times;</span>
+            <h2>Qual o seu nome?</h2>
+            <input type="text" id="nomeCliente" placeholder="Digite seu nome" required />
+            <button type="button" id="btnClienteContinuar">Continuar</button>
+        </div>
+    </div>
+
+    <!-- 3) Modal de Produtos -->
+    <div id="modalProdutos" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <span class="close" onclick="fecharModal('modalProdutos')">&times;</span>
+            <h2>Adicionar produtos?</h2>
+            <p class="muted">Escolha seus produtos (opcional). O valor será informado no WhatsApp.</p>
+
+            <div id="produtosContainer" class="prod-grid"></div>
+
+            <div class="prod-total">
+                <span>Total: <strong id="prodTotal">R$ 0,00</strong></span>
+            </div>
+
+            <div class="row-actions">
+                <button type="button" id="btnProdutosPular" class="btn-secondary">Pular</button>
+                <button type="button" id="btnProdutosContinuar">Continuar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4) Modal RA Club -->
+    <div id="modalRAClub" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <div class="raclub-head">
+                <h2> Club • Assinatura</h2>
+                <p class="muted">Economize no seu corte com benefícios exclusivos:</p>
+                <ul class="raclub-list">
+                    <li>✂️ Cortes ilimitados</li>
+                    <li>🧴 10% OFF em produtos selecionados</li>
+                    <li>🗓️ Prioridade no agendamento</li>
+                </ul>
+            </div>
+
+            <div class="row-actions">
+                <button type="button" id="btnRAJaMembro" class="btn-secondary">Já faço parte</button>
+                <button type="button" id="btnRANao" class="btn-secondary">Agora não</button>
+                <a id="btnRAAssinar" class="btn-primary" href="#" target="_blank" rel="noopener">Quero assinar</a>
+            </div>
+
+            <div id="raForm" class="hidden" aria-hidden="true"></div>
+        </div>
+    </div>
+
+    <!-- 5) Modal Avaliação -->
+    <div id="modalAvaliacao" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <span class="close" onclick="fecharModal('modalAvaliacao')">&times;</span>
+            <h2>Gostou do atendimento? 💬</h2>
+            <p class="muted">Sua opinião ajuda muito a nossa barbearia! Que tal deixar uma avaliação no Google?</p>
+            <a id="btnAvaliarGoogle" class="btn-ghost" href="#" target="_blank" rel="noopener">
+                <i class='bx bxs-star'></i> Avaliar no Google
+            </a>
+        </div>
+    </div>
+
+    <!-- ===== NOVO: Modal de Serviço no estilo do print ===== -->
+    <div id="servicoModal" class="modal" aria-hidden="true">
+        <div class="modal-content svc-sheet" role="dialog" aria-modal="true">
+            <div class="svc-header">
+                <div class="svc-title">Selecionar serviço</div>
+                <span class="svc-close" onclick="fecharModal('servicoModal')">&times;</span>
+            </div>
+
+            <!-- 🔍 Busca de serviços (NOVO) -->
+            <div class="svc-search">
+                <i class='bx bx-search' aria-hidden="true"></i>
+                <input id="svcSearch" type="search" placeholder="Digite para procurar um serviço..." autocomplete="off"
+                    spellcheck="false" />
+            </div>
+
+            <div class="svc-list" id="servicoLista">
+                <!-- itens renderizados via JS -->
+            </div>
+
+            <div class="svc-actions">
+                <button id="servicoCancelar" class="svc-btn svc-btn-ghost">Cancelar</button>
+                <button id="servicoConfirmarWpp" class="svc-btn svc-btn-dark">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

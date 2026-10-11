@@ -1,0 +1,70 @@
+export const DEPOSIT_AMOUNT = 15;
+
+export const BOOKING_HOURS = [
+    "09:00", "10:00", "11:00", "12:00", "13:00",
+    "14:00", "15:00", "16:00", "17:00", "18:00"
+];
+
+export const PROFESSIONALS = ["Rodrigo", "Melqui"];
+
+export const PRODUCTS = [
+    { nome: "Pomada Líquida DA Force MEN", preco: 39.99 },
+    { nome: "Leave-in", preco: 39.99 },
+    { nome: "Tônico Capilar Dom Pelo", preco: 49.99 },
+    { nome: "Balm Para Barba", preco: 39.99 },
+    { nome: "Pomada Modeladora - Efeito Teia", preco: 34.99 },
+    { nome: "Pomada Modeladora - Efeito Seco", preco: 34.99 },
+];
+
+export const SERVICES = [
+    { nome: "Acabamento", valor: 20 },
+    { nome: "Maquina e Tesoura", valor: 40 },
+    { nome: "Corte Maquina", valor: 40 },
+    { nome: "Corte Tesoura", valor: 50 },
+    { nome: "Alisamento Americano", valor: 40 },
+    { nome: "Corte Infantil", valor: 50 },
+    { nome: "Blindado", valor: 60 },
+    { nome: "Corte + Barba + Alisamento Prime", valor: 150 },
+    { nome: "Corte e Escova", valor: 70 },
+    { nome: "Corte Fantasia", valor: 60 },
+    { nome: "Barba + Sobrancelha", valor: 55 },
+    { nome: "Corte + Barba + Sobrancelha", valor: 90 },
+    { nome: "Corte + Alisamento Prime", valor: 95 },
+    { nome: "Corte + Progressiva", valor: 115 },
+    { nome: "Corte + Sobrancelha", valor: 65 },
+    { nome: "Corte + Feminino", valor: 70 },
+    { nome: "Matizar", valor: 30 },
+    { nome: "Progressiva", valor: 70 },
+    { nome: "Taper Fade", valor: 40 },
+    { nome: "Navalhado", valor: 45 },
+    { nome: "Alisamento + Corte + Barba + Pigmentação + Sobrancelha", valor: 230 },
+    { nome: "Alisamento Prime + Corte + Pigmentação + Sobrancelha", valor: 175 },
+    { nome: "Alisamento Prime + Corte Maquina + Barba", valor: 140 },
+    { nome: "Alisamento Prime + Corte Tesoura", valor: 125 },
+    { nome: "Alisamento Prime + Corte Tesoura + Barba", valor: 160 },
+    { nome: "Alisamento Prime + Navalhado", valor: 120 },
+    { nome: "Alisamento Prime + Navalhado + Barba", valor: 145 },
+    { nome: "Aplicação de Colorção", valor: 45 },
+    { nome: "Barba + Acabamento", valor: 55 },
+    { nome: "Barba + Hidratação", valor: 55 },
+    { nome: "Barba + Pigmentação", valor: 60 },
+    { nome: "Barba + Limpeza de Pele", valor: 65 },
+    { nome: "Botox + Navalhado + Barba", valor: 110 },
+    { nome: "Botox Prime + Corte Maquina + Barba", valor: 120 },
+    { nome: "Botox Prime + Corte Tesoura + Barba", valor: 130 },
+    { nome: "Corte + Barba + Limpeza de Pele", valor: 120 },
+    { nome: "Corte + Barba", valor: 75 },
+    { nome: "Corte + Hidratação + Escova", valor: 65 },
+    { nome: "Corte + Alisamento Americano", valor: 75 },
+    { nome: "Corte + Alisamento Prime + Sobrancelha", valor: 130 },
+    { nome: "Corte + Barba + Alisamento Americano", valor: 100 },
+    { nome: "Corte + Barba + Botox Prime", valor: 120 },
+    { nome: "Corte + Barba + Limpeza de Pele + Sobrancelha + Pigmentação Capilar", valor: 145 },
+    { nome: "Corte + Barba + Sobrancelha + Botox Prime", valor: 160 },
+    { nome: "Corte + Botox + Sobrancelha", valor: 110 },
+    { nome: "Corte + Botox Prime", valor: 105 },
+    { nome: "Corte + Luzes", valor: 115 },
+    { nome: "Corte + Luzes + Sobrancelha", valor: 140 },
+    { nome: "Corte + Luzes + Progressiva", valor: 165 },
+    { nome: "Corte + Pigmentação + Barba", valor: 100 },
+];
